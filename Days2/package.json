@@ -1,0 +1,30 @@
+{
+  "name": "days2",
+  "version": "1.0.0",
+  "description": "React class",
+  "keywords": [
+    "react",
+    "mr.pawan"
+  ],
+  "homepage": "https://github.com/RamRaj110/Class-React#readme",
+  "bugs": {
+    "url": "https://github.com/RamRaj110/Class-React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamRaj110/Class-React.git"
+  },
+  "license": "ISC",
+  "author": "Mr.Pawan",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}

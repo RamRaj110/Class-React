@@ -1,0 +1,27 @@
+{
+  "name": "days3",
+  "version": "1.0.0",
+  "description": "days 3",
+  "homepage": "https://github.com/RamRaj110/Class-React#readme",
+  "bugs": {
+    "url": "https://github.com/RamRaj110/Class-React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamRaj110/Class-React.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "reactdom": "^2.0.0"
+  }
+}

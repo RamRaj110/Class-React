@@ -1,4 +1,4 @@
-## Namaste React Course by Akshay Saini
+
 
 # Episode 05 - Let's get Hooked!
 

@@ -243,3 +243,8 @@ margin: auto;
   object-fit: cover;
 
 }
+.status{
+  text-align: center;
+  font: bolder;
+  cursor: pointer;
+}

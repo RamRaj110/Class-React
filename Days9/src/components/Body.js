@@ -2,6 +2,7 @@ import RestCard from "./RestCard";
 import { useEffect, useState } from "react";
 import { API_URL } from "./utils/libs";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "./utils/useOnlineStatus";
 
 const Body = () => {
   const [orignalData, setOrignalData] = useState([]);
@@ -11,6 +12,7 @@ const Body = () => {
   useEffect(() => {
     fetchData();
   }, []);
+  
 
   const fetchData = async () => {
     const data = await fetch(API_URL);
@@ -22,6 +24,12 @@ const Body = () => {
     setNewData(resData);
     setOrignalData(resData);
   };
+
+  const onlineStatus = useOnlineStatus();
+
+  if(!onlineStatus) return (
+  <h1>Sorry..Plz check your Internet connection.</h1>
+  )
 
   return (
     <div>

@@ -1,16 +1,29 @@
-<!-- `````````````````````````````````````````````````` -->
+```````````````````````````````````
+Chunking
+Code Splitting
+Dynamic Boundling
+Lazy loading
+on demand loading
+dynamic import
+````````````````````````````````````````
+Lazy loading - Optemize our large scale application. Breack in small..small chunk..its lazy loading.
+like- grocerry assume manny component. when user do not need why its load..so create a lazy loading when user click on it grocerry load.
+name import lazy on react.suspense-in fallback is used when grocery are not loading then show another page.
 
-LifeCycle of class component.
-[parent constructor]->[Parent render]->[Parent componentdidMount]
 
-if parent component inside another class component.
-[parent constructor]->[Parent render]->[child constructor]->[child render]->[child componentdidmount]->[Parent componentdidMount]
+````````````````````````````````````````````````````````
+const Grocerry = lazy(()=>import('./components/Grocerry'))
+ {
+    path:"/grocerry",
+    element:<Suspense fallback={<h1>Loading...</h1>}><Grocerry/></Suspense>
+  },
 
-*componentDidMount use for fetch api.like we use useEffect in fn component.
+````````````````````````````````````````````````````````````
 
-componentDidUpdate- it's call when state or props change.
-componentDidUnMount - it's call when component is removed from dom.like i am in about page and then go to the contact page.
 
-``````````````````````````````````````````````````
-https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
-``````````````````````````````````````````````````
+Topics Taught
+⦁	Custom Hooks
+⦁	Modularity in Code
+⦁	Modular Bundling
+⦁	Code Splitting
+⦁	Lazy Loading
